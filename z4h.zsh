@@ -109,7 +109,7 @@ fi
 '[' '-n' "${WT_SESSION-}" ']' && 'export' COLORTERM="${COLORTERM:-truecolor}"
 
 if '[' '-n' "${Z4H-}" ']' &&
-   '[' "${Z4H_URL-}" '=' 'https://raw.githubusercontent.com/romkatv/zsh4humans/v5' ']' &&
+   '[' "${Z4H_URL-}" '=' 'https://raw.githubusercontent.com/jlor/zsh4humans/v5' ']' &&
    '[' '-z' "${Z4H##/*}" '-a' '-r' "$Z4H"/zsh4humans/main.zsh ']'; then
   if '.' "$Z4H"/zsh4humans/main.zsh; then
     'setopt' 'aliases'
@@ -178,7 +178,7 @@ if '[' '-n' "${_z4h_bootstrap-}" ']'; then
         >&2 'printf' 'It must be set at the top of \033[4;33m"$ZDOTDIR"\033[0;4m/.zshenv\033[0m:\n'
       fi
       >&2 'printf' '\n'
-      >&2 'printf' '  Z4H_URL=\033[33m"https://raw.githubusercontent.com/romkatv/zsh4humans/v5"\033[0m\n'
+      >&2 'printf' '  Z4H_URL=\033[33m"https://raw.githubusercontent.com/jlor/zsh4humans/v5"\033[0m\n'
       'exit' '1'
     fi
 
@@ -193,7 +193,7 @@ if '[' '-n' "${_z4h_bootstrap-}" ']'; then
         >&2 'printf' 'It comes from \033[4;33m"$ZDOTDIR"\033[0;4m/.zshenv\033[0m. Correct value example:\n'
       fi
       >&2 'printf' '\n'
-      >&2 'printf' '  Z4H_URL=\033[33m"https://raw.githubusercontent.com/romkatv/zsh4humans/v5"\033[0m\n'
+      >&2 'printf' '  Z4H_URL=\033[33m"https://raw.githubusercontent.com/jlor/zsh4humans/v5"\033[0m\n'
       'exit' '1'
     fi
 
@@ -202,7 +202,7 @@ if '[' '-n' "${_z4h_bootstrap-}" ']'; then
       >&2 'printf' '\n'
       >&2 'printf' 'Expected:\n'
       >&2 'printf' '\n'
-      >&2 'printf' '  Z4H_URL=\033[33m"%s"\033[0m\n' "https://raw.githubusercontent.com/romkatv/zsh4humans/v5"
+      >&2 'printf' '  Z4H_URL=\033[33m"%s"\033[0m\n' "https://raw.githubusercontent.com/jlor/zsh4humans/v5"
       >&2 'printf' '\n'
       >&2 'printf' 'Found:\n'
       >&2 'printf' '\n'
@@ -334,12 +334,12 @@ if command -v 'curl' >'/dev/null' 2>&1; then
   >&2 'printf' '\n'
   >&2 'printf' 'Give up and start over:\n'
   >&2 'printf' '\n'
-  >&2 'printf' '  \033[32msh\033[0m -c \033[33m"\033[0m$(\033[32mcurl\033[0m -fsSL \033[4mhttps://raw.githubusercontent.com/romkatv/zsh4humans/v5/install\033[0m)\033[33m"\033[0m\n'
+  >&2 'printf' '  \033[32msh\033[0m -c \033[33m"\033[0m$(\033[32mcurl\033[0m -fsSL \033[4mhttps://raw.githubusercontent.com/jlor/zsh4humans/v5/install\033[0m)\033[33m"\033[0m\n'
 elif command -v 'wget' >'/dev/null' 2>&1; then
   >&2 'printf' '\n'
   >&2 'printf' 'Give up and start over:\n'
   >&2 'printf' '\n'
-  >&2 'printf' '  \033[32msh\033[0m -c \033[33m"\033[0m$(\033[32mwget\033[0m -O- \033[4mhttps://raw.githubusercontent.com/romkatv/zsh4humans/v5/install\033[0m)\033[33m"\033[0m\n'
+  >&2 'printf' '  \033[32msh\033[0m -c \033[33m"\033[0m$(\033[32mwget\033[0m -O- \033[4mhttps://raw.githubusercontent.com/jlor/zsh4humans/v5/install\033[0m)\033[33m"\033[0m\n'
 fi
 
 >&2 'printf' '\n'

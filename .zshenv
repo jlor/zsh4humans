@@ -16,7 +16,7 @@ if [ -n "${Z4H_BOOTSTRAPPING-}" ]; then
   umask o-w
   unset Z4H_BOOTSTRAPPING
 
-  Z4H_URL="https://raw.githubusercontent.com/romkatv/zsh4humans/v5"
+  Z4H_URL="https://raw.githubusercontent.com/jlor/zsh4humans/v5"
   : "${Z4H:=${XDG_CACHE_HOME:-$HOME/.cache}/zsh4humans/v5}"
 
   if [ ! -e "$Z4H"/z4h.zsh ]; then
