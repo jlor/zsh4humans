@@ -57,6 +57,7 @@ local success
     'linux i686');;
     'MINGW64_NT-10.0-19045 x86_64');;
     *)
+      printf -Pru2 "(inside -z4h-install-many)"
       print -Pru2 -- "%F{3}z4h%f: unsupported platform: %F{1}${uname_sm//\%/%%}%f"
       return 1
     ;;
