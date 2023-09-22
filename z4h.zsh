@@ -281,7 +281,7 @@ if '[' '-n' "${_z4h_bootstrap-}" ']'; then
       fi
 
       if '[' '-z' "${Z4H_BOOTSTRAP_COMMAND-}" ']'; then
-        url="https://github.com/romkatv/zsh4humans/archive/v$v.tar.gz"
+        url="https://github.com/jlor/zsh4humans/archive/v$v.tar.gz"
 
         if command -v 'curl' >'/dev/null' 2>&1; then
           err="$('command' 'curl' '-fsSL' '--' "$url" 2>&1 >"$tmpdir"/snapshot.tar.gz)"
