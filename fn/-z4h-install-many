@@ -55,6 +55,7 @@ local success
     'linux armv8l');;
     'linux x86_64');;
     'linux i686');;
+    'MINGW64_NT-10.0-19045 x86_64');;
     *)
       print -Pru2 -- "%F{3}z4h%f: unsupported platform: %F{1}${uname_sm//\%/%%}%f"
       return 1
